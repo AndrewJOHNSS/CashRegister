@@ -76,8 +76,9 @@
             this.canadashopLabel.Name = "canadashopLabel";
             this.canadashopLabel.Size = new System.Drawing.Size(658, 65);
             this.canadashopLabel.TabIndex = 0;
-            this.canadashopLabel.Text = "The Canada Shop";
+            this.canadashopLabel.Text = "The Canada Shop eh?";
             this.canadashopLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.canadashopLabel.Click += new System.EventHandler(this.canadashopLabel_Click);
             // 
             // flagLabel
             // 
@@ -154,7 +155,7 @@
             // subtotalOutput
             // 
             this.subtotalOutput.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.subtotalOutput.Location = new System.Drawing.Point(193, 231);
+            this.subtotalOutput.Location = new System.Drawing.Point(196, 231);
             this.subtotalOutput.Name = "subtotalOutput";
             this.subtotalOutput.Size = new System.Drawing.Size(100, 23);
             this.subtotalOutput.TabIndex = 15;
@@ -202,6 +203,7 @@
             this.changeLabel.Size = new System.Drawing.Size(43, 13);
             this.changeLabel.TabIndex = 21;
             this.changeLabel.Text = "change";
+            this.changeLabel.Click += new System.EventHandler(this.changeLabel_Click);
             // 
             // changeOutput
             // 
@@ -278,7 +280,6 @@
             this.receiptflagLabel.Name = "receiptflagLabel";
             this.receiptflagLabel.Size = new System.Drawing.Size(116, 23);
             this.receiptflagLabel.TabIndex = 30;
-            this.receiptflagLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // receipthockeyLabel
             // 

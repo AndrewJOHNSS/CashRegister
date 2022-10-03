@@ -52,8 +52,6 @@ namespace CashRegister
         {
             try
             {
-
-
                 numofFlag = Convert.ToInt32(flagtextBox.Text);
                 numofHockey = Convert.ToInt32(hockeytextBox.Text);
                 numofIgloo = Convert.ToInt32(iglootextBox.Text);
@@ -76,6 +74,9 @@ namespace CashRegister
                 subtotalOutput.Text = "input error eh?";
                 taxOutput.Text = "input error eh?";
                 totalOutput.Text = "input error eh?";
+                hockeytextBox.Text = "";
+                flagtextBox.Text = "";
+                iglootextBox.Text = "";
                 return;
             }
         }
@@ -92,6 +93,7 @@ namespace CashRegister
             catch
             {
                 changeOutput.Text = "error eh?";
+                tenderedtextBox.Text = "";
                 return;
             }
         }
@@ -102,11 +104,11 @@ namespace CashRegister
             ordernumberLabel.ForeColor = Color.White;
             player.Play();
             Refresh();
-            Thread.Sleep(500);
+            Thread.Sleep(1100);
             player3.Play();
             receiptflagLabel.Text = $"{flagprice}";
             receiptflagLabel.Text = fullflagprice.ToString("C");
-            numofflagreciptLabel.Text = $"X{numofFlag}";
+            numofflagreciptLabel.Text = $"= Flag X{numofFlag}";
             receiptflagLabel.ForeColor = Color.White;
             numofflagreciptLabel.ForeColor = Color.White;
             Refresh();
@@ -114,7 +116,7 @@ namespace CashRegister
             player3.Play();
             receipthockeyLabel.Text = $"{hockeyprice}";
             receipthockeyLabel.Text = fullhockeyprice.ToString("C");
-            numofhockeyreciptLabel.Text = $"X{numofHockey}";
+            numofhockeyreciptLabel.Text = $"= Hockey Sticks X{numofHockey}";
             receipthockeyLabel.ForeColor = Color.White;
             numofhockeyreciptLabel.ForeColor = Color.White;
             Refresh();
@@ -122,18 +124,18 @@ namespace CashRegister
             player3.Play();
             receiptiglooLabel.Text = $"{iglooprice}";
             receiptiglooLabel.Text = fulliglooprice.ToString("C");
-            numofiglooreciptLabel.Text = $"X{numofIgloo}";
+            numofiglooreciptLabel.Text = $"= Igloos X{numofIgloo}";
             receiptiglooLabel.ForeColor = Color.White;
             numofiglooreciptLabel.ForeColor = Color.White;
             Refresh();
             Thread.Sleep(500);
             player3.Play();
             subtotalreceiptLabel.Text = $"Subtotal: {subtotal}";
-            subtotalreceiptLabel.Text = subtotal.ToString("Subtotal: $ .##");
+            subtotalreceiptLabel.Text = subtotal.ToString("Subtotal: $ 0.00");
             taxreceiptLabel.Text = $"Tax: {taxamount}";
-            taxreceiptLabel.Text = taxamount.ToString("Tax: $ .##");
+            taxreceiptLabel.Text = taxamount.ToString("Tax: $ 0.00");
             totalreceiptLabel.Text = $"Total: {totalprice}";
-            totalreceiptLabel.Text = totalprice.ToString("Total: $ .##");
+            totalreceiptLabel.Text = totalprice.ToString("Total: $ 0.00");
             subtotalreceiptLabel.ForeColor = Color.White;
             taxreceiptLabel.ForeColor = Color.White;
             totalreceiptLabel.ForeColor = Color.White;
@@ -141,17 +143,14 @@ namespace CashRegister
             Thread.Sleep(500);
             player3.Play();
             tenderedreceiptLabel.Text = $"Tendered: {numofTend}";
-            tenderedreceiptLabel.Text = numofTend.ToString("Tendered: $ .##");
+            tenderedreceiptLabel.Text = numofTend.ToString("Tendered: $ 0.00");
             changereceiptLabel.Text = $"Change: {changeleft}";
-            changereceiptLabel.Text = changeleft.ToString("Change: $ .##");
+            changereceiptLabel.Text = changeleft.ToString("Change: $ 0.00");
             tenderedreceiptLabel.ForeColor = Color.White;
             changereceiptLabel.ForeColor = Color.White;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -165,7 +164,7 @@ namespace CashRegister
 
         private void receiptiglooLabel_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void receipthockeyLabel_Click(object sender, EventArgs e)
@@ -207,9 +206,40 @@ namespace CashRegister
             iglootextBox.Text = "";
             hockeytextBox.Text = "";
             flagtextBox.Text = "";
+            fullflagprice = 0;
+            fullhockeyprice = 0;
+            fulliglooprice = 0;
+            numofFlag = 0;
+            numofHockey = 0;
+            numofIgloo = 0;
+            subtotal = 0;
+            taxamount = 0;
+            totalprice = 0;
+            numofTend = 0;
+            changeleft = 0;
+            flagprice = 5;
+            hockeyprice = 9;
+            iglooprice = 20;
+            player3.Play();
             Refresh();
             Thread.Sleep(100);
-            player3.Play();
+        }
+
+        private void canadashopLabel_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void changeLabel_Click(object sender, EventArgs e)
+        {
+            subtotalOutput.Text = "eh? easteregg?";
+            totalOutput.Text = "eh? easteregg?";
+            taxOutput.Text = "eh? easteregg?";
+            tenderedtextBox.Text = "eh? easteregg?";
+            changeOutput.Text = "eh? easteregg?";
+            iglootextBox.Text = "eh? easteregg?";
+            hockeytextBox.Text = "eh? easteregg?";
+            flagtextBox.Text = "eh? easteregg?";
         }
     }
 }
