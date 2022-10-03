@@ -43,10 +43,6 @@ namespace CashRegister
             ordernumberLabel.ForeColor = Color.DarkGray;
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
@@ -151,37 +147,6 @@ namespace CashRegister
         }
 
 
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void receiptiglooLabel_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void receipthockeyLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ordernumberLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void neworderButton_Click(object sender, EventArgs e)
         {
             player2.Play();
@@ -225,10 +190,6 @@ namespace CashRegister
             Thread.Sleep(100);
         }
 
-        private void canadashopLabel_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void changeLabel_Click(object sender, EventArgs e)
         {
