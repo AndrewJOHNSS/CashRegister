@@ -78,7 +78,6 @@
             this.canadashopLabel.TabIndex = 0;
             this.canadashopLabel.Text = "The Canada Shop eh?";
             this.canadashopLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.canadashopLabel.Click += new System.EventHandler(this.canadashopLabel_Click);
             // 
             // flagLabel
             // 
@@ -270,7 +269,6 @@
             this.ordernumberLabel.Size = new System.Drawing.Size(250, 23);
             this.ordernumberLabel.TabIndex = 29;
             this.ordernumberLabel.Text = "Order Number eh?";
-            this.ordernumberLabel.Click += new System.EventHandler(this.ordernumberLabel_Click);
             // 
             // receiptflagLabel
             // 
@@ -289,7 +287,6 @@
             this.receipthockeyLabel.Name = "receipthockeyLabel";
             this.receipthockeyLabel.Size = new System.Drawing.Size(116, 23);
             this.receipthockeyLabel.TabIndex = 31;
-            this.receipthockeyLabel.Click += new System.EventHandler(this.receipthockeyLabel_Click);
             // 
             // receiptiglooLabel
             // 
@@ -299,7 +296,6 @@
             this.receiptiglooLabel.Name = "receiptiglooLabel";
             this.receiptiglooLabel.Size = new System.Drawing.Size(116, 23);
             this.receiptiglooLabel.TabIndex = 32;
-            this.receiptiglooLabel.Click += new System.EventHandler(this.receiptiglooLabel_Click);
             // 
             // label1
             // 
@@ -316,7 +312,6 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(14, 362);
             this.label3.TabIndex = 34;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -334,7 +329,6 @@
             this.subtotalreceiptLabel.Name = "subtotalreceiptLabel";
             this.subtotalreceiptLabel.Size = new System.Drawing.Size(250, 23);
             this.subtotalreceiptLabel.TabIndex = 36;
-            this.subtotalreceiptLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // taxreceiptLabel
             // 
@@ -344,7 +338,6 @@
             this.taxreceiptLabel.Name = "taxreceiptLabel";
             this.taxreceiptLabel.Size = new System.Drawing.Size(250, 23);
             this.taxreceiptLabel.TabIndex = 37;
-            this.taxreceiptLabel.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // totalreceiptLabel
             // 
